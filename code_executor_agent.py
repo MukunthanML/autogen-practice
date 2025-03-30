@@ -1,13 +1,8 @@
-from autogen.coding import LocalCommandLineCodeExecutor
-import tempfile
-import os
-
-
-
-
-
 from autogen import ConversableAgent
+from autogen.coding import LocalCommandLineCodeExecutor
 import os
+import tempfile
+
 def get_config():
     """Retrieve the configuration for the AI model."""
     return [{
@@ -45,18 +40,14 @@ def create_code_writer():
     code_execution_config=False,  # Turn off code execution for this agent.
     )
 
-
-
 # Create a temporary directory to store the code files.
 temp_dir = tempfile.TemporaryDirectory()
-
 current_dir = os.getcwd()  # Get current working directory
 
 executor = LocalCommandLineCodeExecutor(
     timeout=10,  # Timeout for each code execution in seconds.
     work_dir=current_dir,  # Use the temporary directory to store the code files.
 )
-
 
 def create_code_executor():
     """Create a Code Executor Agent."""
@@ -67,13 +58,10 @@ def create_code_executor():
         human_input_mode="ALWAYS",  # Always take human input for this agent for safety.
 )
 
-
 def start_conversation(code_writer, code_executor):
     chat_result = code_executor_agent.initiate_chat(code_writer_agent,
-    message="Write Python code to calculate the sum of 10 prime numbers.",)
+    message="Write Python code to calculate the sum of first 10 prime numbers.",)
     return chat_result
-
-
 
 if __name__ == "__main__":
     config_list = get_config()
@@ -81,5 +69,5 @@ if __name__ == "__main__":
     code_executor_agent = create_code_executor()
     chat_result = start_conversation(code_writer_agent, code_executor_agent)
     print(os.listdir(temp_dir.name))
-    
-        
+    # Clean up the temporary directory.
+    # temp_dir.cleanup()

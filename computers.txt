@@ -1,0 +1,23 @@
+Product ID, Product Name, Brand, Processor, RAM, Storage, Price ($), Display Size (inches), GPU, Operating System
+1, EliteBook 840, HP, Intel Core i7, 16GB, 512GB SSD, 1299, 14, Intel Iris Xe, Windows 11
+2, XPS 13, Dell, Intel Core i5, 8GB, 256GB SSD, 999, 13.3, Intel Iris Xe, Windows 11
+3, MacBook Pro, Apple, M2, 16GB, 512GB SSD, 1999, 14, Apple M2 GPU, macOS
+4, ThinkPad X1 Carbon, Lenovo, Intel Core i7, 16GB, 1TB SSD, 1499, 14, Intel Iris Xe, Windows 11
+5, Surface Laptop 5, Microsoft, Intel Core i5, 8GB, 256GB SSD, 1099, 13.5, Intel Iris Xe, Windows 11
+6, ROG Zephyrus G14, ASUS, AMD Ryzen 9, 32GB, 1TB SSD, 1899, 14, NVIDIA RTX 3060, Windows 11
+7, Legion 5, Lenovo, AMD Ryzen 7, 16GB, 512GB SSD, 1299, 15.6, NVIDIA RTX 3050, Windows 11
+8, Predator Helios 300, Acer, Intel Core i7, 16GB, 1TB SSD, 1499, 15.6, NVIDIA RTX 3060, Windows 11
+9, MacBook Air, Apple, M1, 8GB, 256GB SSD, 999, 13.3, Apple M1 GPU, macOS
+10, ZenBook 14, ASUS, Intel Core i5, 16GB, 512GB SSD, 999, 14, Intel Iris Xe, Windows 11
+11, Pavilion 15, HP, AMD Ryzen 5, 16GB, 512GB SSD, 799, 15.6, AMD Radeon, Windows 11
+12, Latitude 7420, Dell, Intel Core i7, 16GB, 1TB SSD, 1599, 14, Intel Iris Xe, Windows 11
+13, MacBook Pro 16, Apple, M3, 32GB, 1TB SSD, 2699, 16, Apple M3 GPU, macOS
+14, ThinkPad T14, Lenovo, Intel Core i5, 8GB, 256GB SSD, 899, 14, Intel UHD, Windows 11
+15, Vivobook S15, ASUS, Intel Core i7, 16GB, 512GB SSD, 1099, 15.6, Intel Iris Xe, Windows 11
+16, Aspire 5, Acer, Intel Core i3, 8GB, 256GB SSD, 549, 15.6, Intel UHD, Windows 11
+17, Swift X, Acer, AMD Ryzen 7, 16GB, 512GB SSD, 1199, 14, NVIDIA RTX 3050, Windows 11
+18, Surface Book 3, Microsoft, Intel Core i7, 32GB, 1TB SSD, 2399, 13.5, NVIDIA GTX 1660, Windows 11
+19, Inspiron 14, Dell, AMD Ryzen 5, 8GB, 512GB SSD, 699, 14, AMD Radeon, Windows 11
+20, Omen 16, HP, Intel Core i9, 32GB, 1TB SSD, 1999, 16, NVIDIA RTX 3070, Windows 11
+21, Swift 3, Acer, AMD Ryzen 5, 8GB, 512GB SSD, 799, 14, AMD Radeon, Windows 11
+
