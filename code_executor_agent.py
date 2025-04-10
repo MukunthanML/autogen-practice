@@ -3,6 +3,7 @@ from autogen.coding import LocalCommandLineCodeExecutor
 import os
 import tempfile
 
+
 def get_config():
     """Retrieve the configuration for the AI model."""
     return [{

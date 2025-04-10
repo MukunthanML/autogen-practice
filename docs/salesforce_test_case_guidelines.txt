@@ -1,0 +1,55 @@
+# ISTQB-Based Guidelines for Writing Salesforce Test Cases
+
+## 1. Test Case Structure  
+- **Test Case ID**: Unique identifier (e.g., TC_SF_001).
+- **Test Case Name**:  Descriptive name (e.g., "Create New Lead").
+- **Priority**: Priority level (e.g., High, Medium, Low).
+- **Test Case description**: Brief description of the test case (e.g., "Validate Lead Creation").
+- **Test Objective**: Purpose of the test case (e.g., "To ensure a lead can be created with valid data").
+- **Preconditions**: Any setup required before executing the test (e.g., "User must be logged in as Sales User").
+- **Test Steps**: Detailed steps to execute the test case (e.g., "Navigate to Leads tab, click 'New', fill in required fields").
+- **Expected Result**: The expected outcome of the test case (e.g., "Lead record is created and displayed in the Leads list view").
+- **Postconditions**: Any state after the test case execution (e.g., "Lead record is present in the database").
+- **Preconditions**: Any setup required before executing the test (e.g., "User must be logged in as Sales User"
+- **Status**: Current status of the test case (e.g., "Pass", "Fail", "Blocked").
+- **Comments**: Any additional notes or observations (e.g., "Test case executed successfully, no issues found").
+
+
+
+
+
+
+## 2. Clarity and Atomicity  
+- One test case should focus on a single objective.  
+- Avoid combining multiple validations into one case.  
+- Test steps should be short, clear, and unambiguous.  
+- Use standard Salesforce terminology (e.g., Object, Record, Workflow, Validation Rule).
+
+## 3. Traceability  
+- Map test cases to specific requirements or user stories.  
+- Clearly link each case to the relevant Salesforce object or feature (e.g., Opportunity, Lead Assignment Rule).
+
+## 4. Best Practices for Salesforce Testing  
+- Include validations for required fields, uniqueness, and picklist constraints.  
+- Verify profiles and permissions (e.g., create/edit/delete access).  
+- Include workflows, validation rules, and record types where applicable.  
+- Ensure test steps mirror real-world flows (e.g., lead conversion, stage updates).  
+- Cover integration points like Email-to-Case and Web-to-Lead.
+
+## 5. Expected Result Guidelines  
+- Expected outcomes must be specific, observable, and measurable.  
+- Avoid vague phrases like "it should work".  
+- Example of good phrasing: “Opportunity record is saved and assigned an Opportunity ID.”
+
+## 6. Negative Testing  
+- Include cases for invalid or missing inputs.  
+- Validate proper error messages and restricted field behavior.  
+
+## 7. Reusability and Modularity  
+- Identify and reuse common preconditions or setup steps (e.g., "Login as Sales User").  
+- Break down test flows into modular steps for easier maintenance.
+
+## 8. Compliance with Salesforce Standards  
+- Follow Salesforce UI and functional standards.  
+- Account for seasonal Salesforce releases that may affect test behavior.  
+- Avoid hardcoded values; use parameterization wherever feasible.

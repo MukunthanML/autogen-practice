@@ -1,0 +1,51 @@
+✅ Salesforce Test Data Generation Rules
+
+📘 1. General Principles
+
+Use realistic but anonymized data (e.g., "John Doe", "Acme Corp", "123 Main St")
+Ensure data types match Salesforce field definitions (e.g., text, picklist, number, date)
+Respect field validation rules, required fields, and formats
+📌 2. Object-Specific Guidelines
+
+🔹 Opportunities
+
+Name: Combine customer + product + date (e.g., "Acme CRM Upgrade - Apr 2025")
+Stage: Valid Salesforce stages (e.g., Prospecting, Qualification, Closed Won)
+Close Date: Must be a valid future or current date
+Amount: Positive currency format (e.g., 15000.00)
+Account ID: Reference valid Account record
+Owner: Valid Salesforce user ID
+🔹 Accounts
+
+Name: Unique and realistic company names
+Type: Select from valid picklist (e.g., Customer - Direct, Partner)
+Industry: Standard Salesforce industries (e.g., Technology, Finance)
+🔹 Contacts
+
+First & Last Name: Use realistic names
+Email: Valid email format (e.g., john.doe@example.com)
+Account Name: Reference an existing Account
+🔹 Leads
+
+Lead Source: Must be from allowed picklist (e.g., Web, Referral, Partner)
+Status: New, Working, Converted
+Company: Must be filled for Leads
+Email/Phone: Valid formats
+🧪 3. Negative Testing Data
+
+Leave required fields blank to verify validations
+Input invalid formats for emails, dates, currencies
+Use unauthorized profiles for permission tests
+🛡️ 4. Security & Compliance
+
+Avoid using real customer data
+Mask sensitive fields (e.g., SSN, credit card) in test environments
+Use role-based visibility scenarios (e.g., profile permissions, record sharing)
+🔄 5. Automation Friendly
+
+Include unique identifiers or timestamps for easy cleanup
+Data should be reusable across multiple test cases
+Use consistent naming conventions
+🧱 6. Dependencies
+
+Ensure related objects are created in proper order (e.g., Account → Opportunity → Contact)
